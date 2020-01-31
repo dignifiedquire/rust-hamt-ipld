@@ -1,0 +1,41 @@
+[package]
+authors = ["dignifiedquire"]
+edition = "2018"
+name = "hamt-ipld"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+byteorder = "*"
+cid = "0.3"
+failure = "*"
+replace_with = "*"
+serde = { version = "1.0.92", features = [ "derive" ] }
+blake2b_simd = "0.5.2"
+multihash = "0.8.0"
+sha2 = "0.8.0"
+serde_bytes = "0.11.1"
+num-bigint-dig = { version = "0.4.0", features = ["serde"] }
+num-traits = "0.2.8"
+lazy_static = "1.3.0"
+
+[dependencies.bitwise]
+git = "https://github.com/gnzlbg/bitwise"
+
+[dependencies.murmur3]
+git = "https://github.com/dignifiedquire/murmur3"
+branch = "nicer-hashing"
+
+[dependencies.serde_cbor]
+git = "https://github.com/dignifiedquire/cbor"
+branch = "tags"
+features = ["tags"]
+
+[dependencies.lazycell]
+git = "https://github.com/dignifiedquire/lazycell"
+branch = "atomic-borrow-mut"
+
+
+[dev-dependencies]
+hex = "0.3.2"
