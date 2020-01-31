@@ -16,9 +16,6 @@ blake2b_simd = "0.5.2"
 multihash = "0.8.0"
 sha2 = "0.8.0"
 serde_bytes = "0.11.1"
-num-bigint-dig = { version = "0.4.0", features = ["serde"] }
-num-traits = "0.2.8"
-lazy_static = "1.3.0"
 
 [dependencies.bitwise]
 git = "https://github.com/gnzlbg/bitwise"
